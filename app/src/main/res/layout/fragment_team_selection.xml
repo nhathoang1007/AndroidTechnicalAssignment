@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="64dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_button" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_select_team_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="@string/title_select_team"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_teams"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:background="#F8F7F7"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp" />
+</LinearLayout>
